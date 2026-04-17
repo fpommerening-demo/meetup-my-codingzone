@@ -1,0 +1,15 @@
+name: Umgebung Demo
+on:
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hallo
+        run: echo My Coding Zone
+  deployment:
+    environment: CodingZone      
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hallo
+        run: echo My Coding Zone
