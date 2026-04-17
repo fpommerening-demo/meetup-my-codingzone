@@ -1,0 +1,9 @@
+name: timer-workflow
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hallo World"
